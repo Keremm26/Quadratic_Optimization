@@ -50,7 +50,7 @@ The notebook includes a practical finance application to solve the **long-only m
 
 1.  **Install Dependencies**:
     ```bash
-    pip install numpy scipy pandas matplotlib seaborn yfinance cvxopt beautifulsoup4 requests lxml
+    check requirements.txt
     ```
 2.  **Execute the Notebook**:
     Open and run the cells in `Numerical_Optimization_(Quadratic_Programming).ipynb` to reproduce the experiments and visualizations.
