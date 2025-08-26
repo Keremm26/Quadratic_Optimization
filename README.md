@@ -39,7 +39,6 @@ The notebook includes a practical finance application to solve the **long-only m
 ### Repository structure
 
 ```text
-.
 ├── Numerical_Optimization_Quadratic_Programming.ipynb   # Jupyter notebook with code, analysis and plots
 └── NumOptReport.pdf                                     # Detailed project report (PDF)
 ```
