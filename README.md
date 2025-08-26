@@ -1,4 +1,4 @@
-# Equality-Constrained Quadratic Programming Solver
+# Equality-Constrained Quadratic Programming Solver and Portfolio Optimization
 
 ### Aim of the Project
 
