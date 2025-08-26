@@ -6,30 +6,15 @@ This repository implements and benchmarks a suite of solvers for a specific clas
 
 ---
 
-### Problem Formulation
-
-The project focuses on solving the following QP:
-
-$$
-\begin{aligned}
-\min_{x\in\mathbb R^n}\quad & \sum_{i=1}^n x_i^2 - \sum_{i=1}^{n-1} x_i\,x_{i+1} + \sum_{i=1}^n x_i,\\
-\text{s.t.}\quad
-& \sum_{i=k,\,i\equiv k\;(\mathrm{mod}\;K)} x_i \;=\;\epsilon,\quad k=1,\dots,K,
-\end{aligned}
-$$
-
-[cite_start]where `x` is the vector of decision variables, `Q` is a tridiagonal Hessian matrix, and `A` is a sparse constraint matrix[cite: 1, 8].
-
----
 
 ### Methodologies Implemented
 
-[cite_start]Four distinct solver strategies based on the Karush-Kuhn-Tucker (KKT) conditions were implemented and compared[cite: 18]:
+Four distinct solver strategies based on the Karush-Kuhn-Tucker (KKT) conditions were implemented and compared:
 
-* [cite_start]**Dense Direct KKT**: Constructs and solves the full `(n+K) x (n+K)` KKT system using direct LU factorization[cite: 19, 64].
-* [cite_start]**Iterative KKT (GMRES)**: Solves the sparse KKT system iteratively using the Generalized Minimal Residual method, tested with and without a simple diagonal preconditioner[cite: 20, 85].
-* [cite_start]**Schur Complement Reduction**: Eliminates the primal variable `x` and solves a smaller `K x K` system for the dual variable `λ`, using both direct and iterative (CG) approaches[cite: 21, 109].
-* [cite_start]**Null-Space Method**: Eliminates equality constraints by projecting the problem onto the null space of the constraint matrix `A` and solving a smaller, unconstrained QP[cite: 22, 171].
+* **Dense Direct KKT**: Constructs and solves the full `(n+K) x (n+K)` KKT system using direct LU factorization.
+* **Iterative KKT (GMRES)**: Solves the sparse KKT system iteratively using the Generalized Minimal Residual method, tested with and without a simple diagonal preconditioner.
+* **Schur Complement Reduction**: Eliminates the primal variable `x` and solves a smaller `K x K` system for the dual variable `λ`, using both direct and iterative (CG) approaches.
+* **Null-Space Method**: Eliminates equality constraints by projecting the problem onto the null space of the constraint matrix `A` and solving a smaller, unconstrained QP.
 
 ---
 
