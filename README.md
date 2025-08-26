@@ -37,11 +37,6 @@ Four distinct solver strategies based on the Karush-Kuhn-Tucker (KKT) conditions
 ---
 
 ### Repository Structure
-Of course. Here is the corrected repository structure section for your `README.md` file.
-
------
-
-### Repository Structure
 
 .
 ├── Numerical_Optimization_(Quadratic_Programming).ipynb   # Jupyter Notebook with all code, analysis, and plots.
