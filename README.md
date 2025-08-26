@@ -20,7 +20,7 @@ Four distinct solver strategies based on the Karush-Kuhn-Tucker (KKT) conditions
 
 ### Key Findings
 
-* **Accuracy vs. Scalability:** **Dense Direct** and **Null-Space** methods are the most accurate (residuals < $10^{-15}$) but are computationally expensive (O(n^3)) and only feasible for $n \le 2000$.
+* **Accuracy vs. Scalability:** **Dense Direct** and **Null-Space** methods are the most accurate (residuals < $10^{-15}$) but are computationally expensive ($O({n^3})$) and only feasible for $n \le 2000$.
 * **Iterative Performance:** **GMRES** is memory-efficient and fast for large $n$, but its accuracy degrades as the problem size increases. The non-preconditioned version often outperformed the simple diagonal preconditioner.
 * **Best Trade-Off:** **Schur Complement** methods offer the best balance. The sparse, iterative version (Schur-sp) is extremely fast for large $n$ but less accurate, while the banded version (Schur-band) maintains good accuracy at a moderate cost.
 
