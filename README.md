@@ -51,3 +51,25 @@ $$
 ---
 
 ### Repository Structure
+Of course. Here is the corrected repository structure section for your `README.md` file.
+
+-----
+
+### Repository Structure
+
+.
+├── Numerical_Optimization_(Quadratic_Programming).ipynb   # Jupyter Notebook with all code, analysis, and plots.
+└── NumOptReport.pdf                                       # Detailed project report explaining the theory and results.
+
+
+---
+
+### How to Run
+
+1.  **Install Dependencies**:
+    ```bash
+    pip install numpy scipy pandas matplotlib seaborn yfinance cvxopt beautifulsoup4 requests lxml
+    ```
+2.  **Execute the Notebook**:
+    Open and run the cells in `Numerical_Optimization_(Quadratic_Programming).ipynb` to reproduce the experiments and visualizations.
+
